@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "JanitorAI Script Parser",
+  "version": "1.0",
+  "permissions": ["activeTab", "downloads"],
+  "host_permissions": ["https://janitorai.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://janitorai.com/hampter/script/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
