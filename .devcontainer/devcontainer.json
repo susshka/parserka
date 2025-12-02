@@ -1,0 +1,11 @@
+{
+  "name": "Python JanitorAI Parser",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install playwright && playwright install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  }
+}
+
